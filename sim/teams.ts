@@ -256,7 +256,7 @@ export const Teams = new class Teams {
 			// moves
 			j = buf.indexOf('|', i);
 			if (j < 0) return null;
-			set.moves = buf.substring(i, j).split(',', 24).map(name => this.unpackName(name, Dex.moves));
+			set.moves = buf.substring(i, j).split(',', 200).map(name => this.unpackName(name, Dex.moves));
 			i = j + 1;
 
 			// nature
